@@ -44,30 +44,30 @@ new_window pixel 3
 # 
 
 # sound softkeys management
-bindsym XF86AudioRaiseVolume    exec ~/.i3/util/volnotid.sh down
-bindsym XF86AudioLowerVolume    exec ~/.i3/util/volnotid.sh up
-bindsym XF86AudioMute           exec ~/.i3/util/volnotid.sh mute
+# bindsym XF86AudioRaiseVolume    exec ~/.i3/util/volnotid.sh down
+# bindsym XF86AudioLowerVolume    exec ~/.i3/util/volnotid.sh up
+# bindsym XF86AudioMute           exec ~/.i3/util/volnotid.sh mute
 
-# display brightness management
-bindsym XF86MonBrightnessUp     exec "xbacklight +10"
-bindsym XF86MonBrightnessDown   exec "xbacklight -10"
+# # display brightness management
+# bindsym XF86MonBrightnessUp     exec "xbacklight +10"
+# bindsym XF86MonBrightnessDown   exec "xbacklight -10"
 
-# webcam
-bindym XF86WebCam               exec /bin/cheese
+# # webcam
+# bindym XF86WebCam               exec /bin/cheese
 
-# lenovo Key wifi-menu
-bindsym XF86Launch1             exec urxvt -e sh -c "sudo wifi-menu wlp3s0"
+# # lenovo Key wifi-menu
+# bindsym XF86Launch1             exec urxvt -e sh -c "sudo wifi-menu wlp3s0"
 
-# jauth two factor authenticator
-bindsym $mod+F4                 exec --no-startup-id "gnome-screenshot -w"
+# # jauth two factor authenticator
+# bindsym $mod+F4                 exec --no-startup-id "gnome-screenshot -w"
 
-# start dmenu-launcher
-#bindsym $mod+d                   exec dmenu_run
-#bindsym $mod+d                  exec ~/.config/i3/util/i3dmenu-wrapper.sh
-bindsym $mod+d                  exec rofi -show drun -theme glue_pro_blue -font "mono 10"
+# # start dmenu-launcher
+# #bindsym $mod+d                   exec dmenu_run
+# #bindsym $mod+d                  exec ~/.config/i3/util/i3dmenu-wrapper.sh
+# bindsym $mod+d                  exec rofi -show drun -theme glue_pro_blue -font "mono 10"
 
-# lock i3 with i3lock
-bindsym $mod+Shift+x            exec i3lock -c 000000
+# # lock i3 with i3lock
+# bindsym $mod+Shift+x            exec i3lock -c 000000
 
 #############################################
 #                  Keymaps                  #
@@ -217,20 +217,20 @@ client.background        #ffffff
 #                 i3-bar                    #
 #############################################
 
-bar {
-    font $font
-    position top
-    status_command /usr/local/bin/i3status-rs ~/.config/i3status/i3status.toml
-    colors {
-        separator #666666
-        background #222439
-        statusline #dddddd
-        focused_workspace #0088CC #0088CC #ffffff
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
-    }
-}
+# bar {
+#     font $font
+#     position top
+#     status_command /usr/local/bin/i3status-rust ~/.config/i3status/i3status.toml
+#     colors {
+#         separator #666666
+#         background #222439
+#         statusline #dddddd
+#         focused_workspace #0088CC #0088CC #ffffff
+#         active_workspace #333333 #333333 #ffffff
+#         inactive_workspace #333333 #333333 #888888
+#         urgent_workspace #2f343a #900000 #ffffff
+#     }
+# }
 
 #############################################
 #            specific windows               #
@@ -251,13 +251,12 @@ for_window [class="Firefox"]        border none
 #            auto start with i3             #
 #############################################
 
-# composite manager
-exec --no-startup-id compton -b --config ~/.config/compton.conf
-# less eye pain
-exec --no-startup-id redshift -l 46:7
-# no beep!
-exec --no-startup-id xset b off
-# dunst for notifications and volnoti daemon
-exec --no-startup-id dunst -conf /home/peter/.config/dunst/dunstrc
-# wallpaper
-exec --no-startup-id feh --bg-fill /home/peter/.config/wallpaper.jpg
+# # composite manager
+# exec --no-startup-id compton -b --config ~/.config/compton.conf
+# # less eye pain
+# # no beep!
+# exec --no-startup-id xset b off
+# # dunst for notifications and volnoti daemon
+# exec --no-startup-id dunst -conf /home/peter/.config/dunst/dunstrc
+# # wallpaper
+# exec --no-startup-id feh --bg-fill /home/peter/.config/wallpaper.jpg
