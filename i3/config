@@ -258,6 +258,6 @@ exec --no-startup-id redshift -l 46:7
 # no beep!
 exec --no-startup-id xset b off
 # dunst for notifications and volnoti daemon
-exec --no-startup-id dunst -conf /home/aaron/.config/dunst/dunstrc
+exec --no-startup-id dunst -conf /home/peter/.config/dunst/dunstrc
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/aaron/.config/wallpaper.jpg
+exec --no-startup-id feh --bg-fill /home/peter/.config/wallpaper.jpg

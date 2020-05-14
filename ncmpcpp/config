@@ -7,7 +7,7 @@
 #                     |_|        |_|   |_|     #
 ################################################
 
-mpd_music_dir = "/home/aaron/Music"
+mpd_music_dir = "/home/peter/Music"
 mpd_crossfade_time = "5"
 
 # Visualizer
