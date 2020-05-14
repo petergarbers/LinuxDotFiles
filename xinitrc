@@ -1,4 +1,4 @@
 #!/bin/sh
 cd /home/$USER
-setxkbmap ch
+setxkbmap en
 exec i3
