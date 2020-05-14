@@ -73,145 +73,145 @@ new_window pixel 3
 #                  Keymaps                  #
 #############################################
 
-# start terminal
-bindsym $mod+Return             exec --no-startup-id kitty
-#bindsym $mod+Return             exec --no-startup-id termite
-#bindsym $mod+Return             exec --no-startup-id i3-sensible-terminal
+# # start terminal
+# bindsym $mod+Return             exec --no-startup-id kitty
+# #bindsym $mod+Return             exec --no-startup-id termite
+# #bindsym $mod+Return             exec --no-startup-id i3-sensible-terminal
 
-# kill focused window
-bindsym $mod+Shift+q            kill
+# # kill focused window
+# bindsym $mod+Shift+q            kill
 
-# change focus vim Style
-bindsym $mod+h                  focus left
-bindsym $mod+l                  focus right
-bindsym $mod+k                  focus up
-bindsym $mod+j                  focus down
+# # change focus vim Style
+# bindsym $mod+h                  focus left
+# bindsym $mod+l                  focus right
+# bindsym $mod+k                  focus up
+# bindsym $mod+j                  focus down
 
-# move focused window vim Style
-bindsym $mod+Shift+h            move left
-bindsym $mod+Shift+l            move right
-bindsym $mod+Shift+k            move up
-bindsym $mod+Shift+j            move down
+# # move focused window vim Style
+# bindsym $mod+Shift+h            move left
+# bindsym $mod+Shift+l            move right
+# bindsym $mod+Shift+k            move up
+# bindsym $mod+Shift+j            move down
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left         move left
-bindsym $mod+Shift+Down         move down
-bindsym $mod+Shift+Up           move up
-bindsym $mod+Shift+Right        move right
+# # alternatively, you can use the cursor keys:
+# bindsym $mod+Shift+Left         move left
+# bindsym $mod+Shift+Down         move down
+# bindsym $mod+Shift+Up           move up
+# bindsym $mod+Shift+Right        move right
 
-# split in horizontal orientation
-bindsym $mod+v                  split h
+# # split in horizontal orientation
+# bindsym $mod+v                  split h
 
-# split in vertical orientation
-bindsym $mod+c                  split v
+# # split in vertical orientation
+# bindsym $mod+c                  split v
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f                  fullscreen
+# # enter fullscreen mode for the focused container
+# bindsym $mod+f                  fullscreen
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s                  layout stacking
-bindsym $mod+w                  layout tabbed
-bindsym $mod+e                  layout toggle split
+# # change container layout (stacked, tabbed, toggle split)
+# bindsym $mod+s                  layout stacking
+# bindsym $mod+w                  layout tabbed
+# bindsym $mod+e                  layout toggle split
 
-# toggle tiling / floating
-bindsym $mod+Shift+space        floating toggle
+# # toggle tiling / floating
+# bindsym $mod+Shift+space        floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space              focus mode_toggle
+# # change focus between tiling / floating windows
+# bindsym $mod+space              focus mode_toggle
 
-# focus the parent container
-bindsym $mod+a                  focus parent
+# # focus the parent container
+# bindsym $mod+a                  focus parent
 
-# reload the configuration file
-bindsym $mod+Shift+c            reload
+# # reload the configuration file
+# bindsym $mod+Shift+c            reload
 
-# restart i3 inplace
-bindsym $mod+Shift+r            restart
+# # restart i3 inplace
+# bindsym $mod+Shift+r            restart
 
-# exit i3
-bindsym $mod+Shift+e            exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
+# # exit i3
+# bindsym $mod+Shift+e            exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
 
-# enter the resize mode
-bindsym $mod+r                  mode "resize"
+# # enter the resize mode
+# bindsym $mod+r                  mode "resize"
 
-# scratchpad
-bindsym $mod+y                  scratchpad show
-bindsym $mod+x                  move scratchpad
+# # scratchpad
+# bindsym $mod+y                  scratchpad show
+# bindsym $mod+x                  move scratchpad
     
-#############################################
-#             Workspace & Tags              #
-#############################################
+# #############################################
+# #             Workspace & Tags              #
+# #############################################
 
-# switch to workspace
-bindsym $mod+1                  workspace 1
-bindsym $mod+2                  workspace 2
-bindsym $mod+3                  workspace 3
-bindsym $mod+4                  workspace 4
-bindsym $mod+5                  workspace 5
-bindsym $mod+6                  workspace 6
-bindsym $mod+7                  workspace 7
-bindsym $mod+8                  workspace 8
-bindsym $mod+9                  workspace 9
-bindsym $mod+0                  workspace 10
+# # switch to workspace
+# bindsym $mod+1                  workspace 1
+# bindsym $mod+2                  workspace 2
+# bindsym $mod+3                  workspace 3
+# bindsym $mod+4                  workspace 4
+# bindsym $mod+5                  workspace 5
+# bindsym $mod+6                  workspace 6
+# bindsym $mod+7                  workspace 7
+# bindsym $mod+8                  workspace 8
+# bindsym $mod+9                  workspace 9
+# bindsym $mod+0                  workspace 10
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+# # move focused container to workspace
+# bindsym $mod+Shift+1 move container to workspace 1
+# bindsym $mod+Shift+2 move container to workspace 2
+# bindsym $mod+Shift+3 move container to workspace 3
+# bindsym $mod+Shift+4 move container to workspace 4
+# bindsym $mod+Shift+5 move container to workspace 5
+# bindsym $mod+Shift+6 move container to workspace 6
+# bindsym $mod+Shift+7 move container to workspace 7
+# bindsym $mod+Shift+8 move container to workspace 8
+# bindsym $mod+Shift+9 move container to workspace 9
+# bindsym $mod+Shift+0 move container to workspace 10
 
-#############################################
-#             Resize handling               #
-#############################################
+# #############################################
+# #             Resize handling               #
+# #############################################
 
-mode "resize" {
-    # bindings to resize
-    bindsym h                   resize shrink width 10 px or 10 ppt
-    bindsym j                   resize grow height 10 px or 10 ppt
-    bindsym k                   resize shrink height 10 px or 10 ppt
-    bindsym l                   resize grow width 10 px or 10 ppt
+# mode "resize" {
+#     # bindings to resize
+#     bindsym h                   resize shrink width 10 px or 10 ppt
+#     bindsym j                   resize grow height 10 px or 10 ppt
+#     bindsym k                   resize shrink height 10 px or 10 ppt
+#     bindsym l                   resize grow width 10 px or 10 ppt
 
-    # back to normal
-    bindsym Return              mode "default"
-    bindsym Escape              mode "default"
-}
+#     # back to normal
+#     bindsym Return              mode "default"
+#     bindsym Escape              mode "default"
+# }
 
-#############################################
-#                 Colors                    #
-#############################################
+# #############################################
+# #                 Colors                    #
+# #############################################
 
-set $BRD_FOC #1c5b98
-set $BRD_UNF #ffffff80
-set $BRD_URG #b0cc54
+# set $BRD_FOC #1c5b98
+# set $BRD_UNF #ffffff80
+# set $BRD_URG #b0cc54
 
-set $BG_FOC #1c5b98
-set $BG_UNF #ffffff80
-set $BG_URG #ffffff80
+# set $BG_FOC #1c5b98
+# set $BG_UNF #ffffff80
+# set $BG_URG #ffffff80
 
-set $TXT_FOC #ffffff
-set $TXT_UNF #ffffff
-set $TXT_URG #ffffff
+# set $TXT_FOC #ffffff
+# set $TXT_UNF #ffffff
+# set $TXT_URG #ffffff
 
-set $IND_FOC #b0cc54
-set $IND_UNF #b0cc54
-set $IND_URG #b0cc54
+# set $IND_FOC #b0cc54
+# set $IND_UNF #b0cc54
+# set $IND_URG #b0cc54
 
-set $CBD_FOC #1c5b98
-set $CBD_UNF #ffffff80
-set $CBD_URG #b0cc54
+# set $CBD_FOC #1c5b98
+# set $CBD_UNF #ffffff80
+# set $CBD_URG #b0cc54
 
-# name                   #border  #backgr #text    #indic   #child_border
-client.focused           $BRD_FOC $BG_FOC $TXT_FOC $IND_FOC $CBD_FOC
-client.unfocused         $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
-client.focused_inactive  $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
-client.urgent            $BRD_URG $BG_URG $TXT_URG $IND_URG $CBF_URG
-client.background        #ffffff
+# # name                   #border  #backgr #text    #indic   #child_border
+# client.focused           $BRD_FOC $BG_FOC $TXT_FOC $IND_FOC $CBD_FOC
+# client.unfocused         $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
+# client.focused_inactive  $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
+# client.urgent            $BRD_URG $BG_URG $TXT_URG $IND_URG $CBF_URG
+# client.background        #ffffff
 
 #############################################
 #                 i3-bar                    #
