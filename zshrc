@@ -1,41 +1,36 @@
-# Path settings
 export PATH=/usr/local/bin:$PATH
+source /usr/share/zsh/share/antigen.zsh
 
-# Path to oh-my-zsh installation.
-export ZSH=/usr/share/oh-my-zsh/
 
-# Don't try to display a powerlinefont theme in a tty
+eval "$(fasd --init auto)"
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle command-not-found
+antigen bundle docker
+antigen bundle docker-compose
+antigen bundle fasd
+antigen bundle git
+antigen bundle git-extras
+antigen bundle last-working-dir
+antigen bundle fbterm
+antigen bundle history
+antigen bundle lein
+antigen bundle screen
+antigen bundle ssh-agent
+antigen bundle gpg-agent
+antigen bundle zsh-completions
+antigen bundle asdf
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+# Load the theme.
 if [[ $TERM == "linux" ]] || [[ $TERM == "screen" ]] ; then
-    ZSH_THEME="gentoo"
+    antigen theme gentoo
 else
-    ZSH_THEME="agnoster"
+    antigen theme agnoster
 fi
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="false"
-# Auto update zsh
-UPDATE_ZSH_DAYS=13
-# Disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
-# Timestamps in zsh history
-HIST_STAMPS="mm/dd/yyyy"
-# No duplicates in history
-HIST_IGNORE_DUPS="true"
-
-# List of plugins
-plugins=(
-  git
-  last-working-dir
-  fbterm
-  ssh-agent
-  gpg-agent
-)
-
-# Move one word left or right using alt
-bindkey "[D" backward-word
-bindkey "^[h" backward-word
-bindkey "[C" forward-word
-bindkey "^[l" forward-word
+# Tell Antigen that you're done.
+antigen apply
 
 # Aliases
 alias lsblk="lsblk -o +LABEL"
@@ -43,10 +38,9 @@ alias ip="ip -c"
 alias showip="ip --brief a"
 alias ssh='TERM=xterm ssh'
 
+
 # ZSH cache dir config
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
-
-source $ZSH/oh-my-zsh.sh
