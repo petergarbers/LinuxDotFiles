@@ -13,8 +13,8 @@
 #############################################
 
 # font
-set $font "pango:DejaVu Sans Mono for Powerline 10"
-font $font
+# set $font "pango:DejaVu Sans Mono for Powerline 10"
+# font $font
 
 # floating modifier
 # mod1 = Alt (xmodmap to show)
@@ -22,14 +22,14 @@ font $font
 set $mod mod4
 floating_modifier $mod
 
-# remove window decorations
-new_window pixel
+# # remove window decorations
+# new_window pixel
 
-# focus follows mouse
-focus_follows_mouse no
+# # focus follows mouse
+# focus_follows_mouse no
 
-# border
-new_window pixel 3
+# # border
+# new_window pixel 3
 
 # gaps
 #gaps inner 10
@@ -236,16 +236,16 @@ new_window pixel 3
 #            specific windows               #
 #############################################
 
-# always floating
-for_window [class="Thunar"]         floating enable
-for_window [class="Nautilus"]       floating enable
-for_window [class="GParted"]        floating enable
-for_window [class="Gedit"]          floating enable
-for_window [class="teamspeak3"]     floating enable
+# # always floating
+# for_window [class="Thunar"]         floating enable
+# for_window [class="Nautilus"]       floating enable
+# for_window [class="GParted"]        floating enable
+# for_window [class="Gedit"]          floating enable
+# for_window [class="teamspeak3"]     floating enable
 
-# 0px Border 
-for_window [class="chrome"]         border none
-for_window [class="Firefox"]        border none
+# # 0px Border
+# for_window [class="chrome"]         border none
+#for_window [class="Firefox"]        border none
 
 #############################################
 #            auto start with i3             #
