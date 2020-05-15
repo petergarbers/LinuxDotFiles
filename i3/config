@@ -13,8 +13,8 @@
 #############################################
 
 # font
-# set $font "pango:DejaVu Sans Mono for Powerline 10"
-# font $font
+set $font "pango:DejaVu Sans Mono for Powerline 10"
+font $font
 
 # floating modifier
 # mod1 = Alt (xmodmap to show)
@@ -22,241 +22,242 @@
 set $mod mod4
 floating_modifier $mod
 
-# # remove window decorations
-# new_window pixel
+# remove window decorations
+new_window pixel
 
-# # focus follows mouse
-# focus_follows_mouse no
+# focus follows mouse
+focus_follows_mouse no
 
-# # border
-# new_window pixel 3
+# border
+new_window pixel 3
 
 # gaps
 #gaps inner 10
-#gaps outer 10
+# gaps outer 10
 
 #############################################
 #              Script Section               #
 #############################################
 
-# 
+#
 # "xev" and "showkeys" can be usefull to determine the keycodes.
-# 
+#
 
 # sound softkeys management
-# bindsym XF86AudioRaiseVolume    exec ~/.i3/util/volnotid.sh down
-# bindsym XF86AudioLowerVolume    exec ~/.i3/util/volnotid.sh up
-# bindsym XF86AudioMute           exec ~/.i3/util/volnotid.sh mute
+bindsym XF86AudioRaiseVolume    exec ~/.i3/util/volnotid.sh down
+bindsym XF86AudioLowerVolume    exec ~/.i3/util/volnotid.sh up
+bindsym XF86AudioMute           exec ~/.i3/util/volnotid.sh mute
 
-# # display brightness management
-# bindsym XF86MonBrightnessUp     exec "xbacklight +10"
-# bindsym XF86MonBrightnessDown   exec "xbacklight -10"
+# display brightness management
+bindsym XF86MonBrightnessUp     exec "xbacklight +10"
+bindsym XF86MonBrightnessDown   exec "xbacklight -10"
 
-# # webcam
-# bindym XF86WebCam               exec /bin/cheese
+# webcam
+bindym XF86WebCam               exec /bin/cheese
 
-# # lenovo Key wifi-menu
-# bindsym XF86Launch1             exec urxvt -e sh -c "sudo wifi-menu wlp3s0"
+# lenovo Key wifi-menu
+bindsym XF86Launch1             exec urxvt -e sh -c "sudo wifi-menu wlp3s0"
 
-# # jauth two factor authenticator
-# bindsym $mod+F4                 exec --no-startup-id "gnome-screenshot -w"
+# jauth two factor authenticator
+bindsym $mod+F4                 exec --no-startup-id "gnome-screenshot -w"
 
-# # start dmenu-launcher
-# #bindsym $mod+d                   exec dmenu_run
-# #bindsym $mod+d                  exec ~/.config/i3/util/i3dmenu-wrapper.sh
-# bindsym $mod+d                  exec rofi -show drun -theme glue_pro_blue -font "mono 10"
+# start dmenu-launcher
+#bindsym $mod+d                   exec dmenu_run
+#bindsym $mod+d                  exec ~/.config/i3/util/i3dmenu-wrapper.sh
+bindsym $mod+d                  exec rofi -show drun -theme glue_pro_blue -font "mono 10"
 
-# # lock i3 with i3lock
-# bindsym $mod+Shift+x            exec i3lock -c 000000
+# lock i3 with i3lock
+bindsym $mod+Shift+x            exec i3lock -c 000000
 
 #############################################
 #                  Keymaps                  #
 #############################################
 
-# # start terminal
-# bindsym $mod+Return             exec --no-startup-id kitty
-# #bindsym $mod+Return             exec --no-startup-id termite
-# #bindsym $mod+Return             exec --no-startup-id i3-sensible-terminal
+# start terminal
+bindsym $mod+Return             exec --no-startup-id kitty
+#bindsym $mod+Return             exec --no-startup-id termite
+#bindsym $mod+Return             exec --no-startup-id i3-sensible-terminal
 
-# # kill focused window
-# bindsym $mod+Shift+q            kill
+# kill focused window
+bindsym $mod+Shift+q            kill
 
-# # change focus vim Style
-# bindsym $mod+h                  focus left
-# bindsym $mod+l                  focus right
-# bindsym $mod+k                  focus up
-# bindsym $mod+j                  focus down
+# change focus vim Style
+bindsym $mod+h                  focus left
+bindsym $mod+l                  focus right
+bindsym $mod+k                  focus up
+bindsym $mod+j                  focus down
 
-# # move focused window vim Style
-# bindsym $mod+Shift+h            move left
-# bindsym $mod+Shift+l            move right
-# bindsym $mod+Shift+k            move up
-# bindsym $mod+Shift+j            move down
+# move focused window vim Style
+bindsym $mod+Shift+h            move left
+bindsym $mod+Shift+l            move right
+bindsym $mod+Shift+k            move up
+bindsym $mod+Shift+j            move down
 
-# # alternatively, you can use the cursor keys:
-# bindsym $mod+Shift+Left         move left
-# bindsym $mod+Shift+Down         move down
-# bindsym $mod+Shift+Up           move up
-# bindsym $mod+Shift+Right        move right
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left         move left
+bindsym $mod+Shift+Down         move down
+bindsym $mod+Shift+Up           move up
+bindsym $mod+Shift+Right        move right
 
-# # split in horizontal orientation
-# bindsym $mod+v                  split h
+# split in horizontal orientation
+bindsym $mod+v                  split h
 
-# # split in vertical orientation
-# bindsym $mod+c                  split v
+# split in vertical orientation
+bindsym $mod+c                  split v
 
-# # enter fullscreen mode for the focused container
-# bindsym $mod+f                  fullscreen
+# enter fullscreen mode for the focused container
+bindsym $mod+f                  fullscreen
 
-# # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s                  layout stacking
-# bindsym $mod+w                  layout tabbed
-# bindsym $mod+e                  layout toggle split
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s                  layout stacking
+bindsym $mod+w                  layout tabbed
+bindsym $mod+e                  layout toggle split
 
-# # toggle tiling / floating
-# bindsym $mod+Shift+space        floating toggle
+# toggle tiling / floating
+bindsym $mod+Shift+space        floating toggle
 
-# # change focus between tiling / floating windows
-# bindsym $mod+space              focus mode_toggle
+# change focus between tiling / floating windows
+bindsym $mod+space              focus mode_toggle
 
-# # focus the parent container
-# bindsym $mod+a                  focus parent
+# focus the parent container
+bindsym $mod+a                  focus parent
 
-# # reload the configuration file
-# bindsym $mod+Shift+c            reload
+# reload the configuration file
+bindsym $mod+Shift+c            reload
 
-# # restart i3 inplace
-# bindsym $mod+Shift+r            restart
+# restart i3 inplace
+bindsym $mod+Shift+r            restart
 
-# # exit i3
-# bindsym $mod+Shift+e            exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
+# exit i3
+bindsym $mod+Shift+e            exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
 
-# # enter the resize mode
-# bindsym $mod+r                  mode "resize"
+# enter the resize mode
+bindsym $mod+r                  mode "resize"
 
-# # scratchpad
-# bindsym $mod+y                  scratchpad show
-# bindsym $mod+x                  move scratchpad
-    
-# #############################################
-# #             Workspace & Tags              #
-# #############################################
+# scratchpad
+bindsym $mod+y                  scratchpad show
+bindsym $mod+x                  move scratchpad
 
-# # switch to workspace
-# bindsym $mod+1                  workspace 1
-# bindsym $mod+2                  workspace 2
-# bindsym $mod+3                  workspace 3
-# bindsym $mod+4                  workspace 4
-# bindsym $mod+5                  workspace 5
-# bindsym $mod+6                  workspace 6
-# bindsym $mod+7                  workspace 7
-# bindsym $mod+8                  workspace 8
-# bindsym $mod+9                  workspace 9
-# bindsym $mod+0                  workspace 10
+#############################################
+#             Workspace & Tags              #
+#############################################
 
-# # move focused container to workspace
-# bindsym $mod+Shift+1 move container to workspace 1
-# bindsym $mod+Shift+2 move container to workspace 2
-# bindsym $mod+Shift+3 move container to workspace 3
-# bindsym $mod+Shift+4 move container to workspace 4
-# bindsym $mod+Shift+5 move container to workspace 5
-# bindsym $mod+Shift+6 move container to workspace 6
-# bindsym $mod+Shift+7 move container to workspace 7
-# bindsym $mod+Shift+8 move container to workspace 8
-# bindsym $mod+Shift+9 move container to workspace 9
-# bindsym $mod+Shift+0 move container to workspace 10
+# switch to workspace
+bindsym $mod+1                  workspace 1
+bindsym $mod+2                  workspace 2
+bindsym $mod+3                  workspace 3
+bindsym $mod+4                  workspace 4
+bindsym $mod+5                  workspace 5
+bindsym $mod+6                  workspace 6
+bindsym $mod+7                  workspace 7
+bindsym $mod+8                  workspace 8
+bindsym $mod+9                  workspace 9
+bindsym $mod+0                  workspace 10
 
-# #############################################
-# #             Resize handling               #
-# #############################################
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 
-# mode "resize" {
-#     # bindings to resize
-#     bindsym h                   resize shrink width 10 px or 10 ppt
-#     bindsym j                   resize grow height 10 px or 10 ppt
-#     bindsym k                   resize shrink height 10 px or 10 ppt
-#     bindsym l                   resize grow width 10 px or 10 ppt
+#############################################
+#             Resize handling               #
+#############################################
 
-#     # back to normal
-#     bindsym Return              mode "default"
-#     bindsym Escape              mode "default"
-# }
+mode "resize" {
+    # bindings to resize
+    bindsym h                   resize shrink width 10 px or 10 ppt
+    bindsym j                   resize grow height 10 px or 10 ppt
+    bindsym k                   resize shrink height 10 px or 10 ppt
+    bindsym l                   resize grow width 10 px or 10 ppt
 
-# #############################################
-# #                 Colors                    #
-# #############################################
+    # back to normal
+    bindsym Return              mode "default"
+    bindsym Escape              mode "default"
+}
 
-# set $BRD_FOC #1c5b98
-# set $BRD_UNF #ffffff80
-# set $BRD_URG #b0cc54
+#############################################
+#                 Colors                    #
+#############################################
 
-# set $BG_FOC #1c5b98
-# set $BG_UNF #ffffff80
-# set $BG_URG #ffffff80
+set $BRD_FOC #1c5b98
+set $BRD_UNF #ffffff80
+set $BRD_URG #b0cc54
 
-# set $TXT_FOC #ffffff
-# set $TXT_UNF #ffffff
-# set $TXT_URG #ffffff
+set $BG_FOC #1c5b98
+set $BG_UNF #ffffff80
+set $BG_URG #ffffff80
 
-# set $IND_FOC #b0cc54
-# set $IND_UNF #b0cc54
-# set $IND_URG #b0cc54
+set $TXT_FOC #ffffff
+set $TXT_UNF #ffffff
+set $TXT_URG #ffffff
 
-# set $CBD_FOC #1c5b98
-# set $CBD_UNF #ffffff80
-# set $CBD_URG #b0cc54
+set $IND_FOC #b0cc54
+set $IND_UNF #b0cc54
+set $IND_URG #b0cc54
 
-# # name                   #border  #backgr #text    #indic   #child_border
-# client.focused           $BRD_FOC $BG_FOC $TXT_FOC $IND_FOC $CBD_FOC
-# client.unfocused         $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
-# client.focused_inactive  $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
-# client.urgent            $BRD_URG $BG_URG $TXT_URG $IND_URG $CBF_URG
-# client.background        #ffffff
+set $CBD_FOC #1c5b98
+set $CBD_UNF #ffffff80
+set $CBD_URG #b0cc54
+
+# name                   #border  #backgr #text    #indic   #child_border
+client.focused           $BRD_FOC $BG_FOC $TXT_FOC $IND_FOC $CBD_FOC
+client.unfocused         $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
+client.focused_inactive  $BRD_UNF $BG_UNF $TXT_UNF $IND_UNF $CBD_UNF
+client.urgent            $BRD_URG $BG_URG $TXT_URG $IND_URG $CBF_URG
+client.background        #ffffff
 
 #############################################
 #                 i3-bar                    #
 #############################################
 
-# bar {
-#     font $font
-#     position top
-#     status_command /usr/local/bin/i3status-rust ~/.config/i3status/i3status.toml
-#     colors {
-#         separator #666666
-#         background #222439
-#         statusline #dddddd
-#         focused_workspace #0088CC #0088CC #ffffff
-#         active_workspace #333333 #333333 #ffffff
-#         inactive_workspace #333333 #333333 #888888
-#         urgent_workspace #2f343a #900000 #ffffff
-#     }
-# }
+bar {
+    font $font
+    position top
+    status_command /usr/bin/i3status ~/.config/i3status/i3status.toml
+    colors {
+        separator #666666
+        background #222439
+        statusline #dddddd
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
+    }
+}
 
 #############################################
 #            specific windows               #
 #############################################
 
-# # always floating
-# for_window [class="Thunar"]         floating enable
-# for_window [class="Nautilus"]       floating enable
-# for_window [class="GParted"]        floating enable
-# for_window [class="Gedit"]          floating enable
-# for_window [class="teamspeak3"]     floating enable
+# always floating
+for_window [class="Thunar"]         floating enable
+for_window [class="Nautilus"]       floating enable
+for_window [class="GParted"]        floating enable
+for_window [class="Gedit"]          floating enable
+for_window [class="teamspeak3"]     floating enable
 
-# # 0px Border
-# for_window [class="chrome"]         border none
-#for_window [class="Firefox"]        border none
+# 0px Border
+for_window [class="chrome"]         border none
+for_window [class="Firefox"]        border none
 
 #############################################
 #            auto start with i3             #
 #############################################
 
-# # composite manager
-# exec --no-startup-id compton -b --config ~/.config/compton.conf
-# # less eye pain
-# # no beep!
-# exec --no-startup-id xset b off
-# # dunst for notifications and volnoti daemon
-# exec --no-startup-id dunst -conf /home/peter/.config/dunst/dunstrc
-# # wallpaper
-# exec --no-startup-id feh --bg-fill /home/peter/.config/wallpaper.jpg
+# composite manager
+exec --no-startup-id compton -b --config ~/.config/compton.conf
+# less eye pain
+exec --no-startup-id redshift -l 46:7
+# no beep!
+exec --no-startup-id xset b off
+# dunst for notifications and volnoti daemon
+exec --no-startup-id dunst -conf /home/aaron/.config/dunst/dunstrc
+# wallpaper
+exec --no-startup-id feh --bg-fill /home/aaron/.config/wallpaper.jpg
