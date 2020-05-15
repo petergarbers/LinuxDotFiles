@@ -9,7 +9,7 @@ antigen use oh-my-zsh
 antigen bundle command-not-found
 antigen bundle docker
 antigen bundle docker-compose
-antigen bundle fasd
+#antigen bundle fasd
 antigen bundle git
 antigen bundle git-extras
 antigen bundle last-working-dir
@@ -20,7 +20,7 @@ antigen bundle screen
 antigen bundle ssh-agent
 antigen bundle gpg-agent
 antigen bundle zsh-completions
-antigen bundle asdf
+
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 # Load the theme.
@@ -44,3 +44,6 @@ ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
+
+# asdf
+source /opt/asdf-vm/asdf.sh
