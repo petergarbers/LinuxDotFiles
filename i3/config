@@ -52,9 +52,6 @@ bindsym XF86AudioMute           exec ~/.i3/util/volnotid.sh mute
 bindsym XF86MonBrightnessUp     exec "xbacklight +10"
 bindsym XF86MonBrightnessDown   exec "xbacklight -10"
 
-# webcam
-bindym XF86WebCam               exec /bin/cheese
-
 # lenovo Key wifi-menu
 bindsym XF86Launch1             exec urxvt -e sh -c "sudo wifi-menu wlp3s0"
 
@@ -220,7 +217,7 @@ client.background        #ffffff
 bar {
     font $font
     position top
-    status_command /usr/bin/i3status ~/.config/i3status/i3status.toml
+    status_command /usr/bin/i3status ~/.i3/i3status.toml
     colors {
         separator #666666
         background #222439
@@ -237,27 +234,26 @@ bar {
 #############################################
 
 # always floating
-for_window [class="Thunar"]         floating enable
-for_window [class="Nautilus"]       floating enable
-for_window [class="GParted"]        floating enable
-for_window [class="Gedit"]          floating enable
-for_window [class="teamspeak3"]     floating enable
+# for_window [class="Thunar"]         floating enable
+# for_window [class="Nautilus"]       floating enable
+# for_window [class="GParted"]        floating enable
+# for_window [class="teamspeak3"]     floating enable
 
 # 0px Border
-for_window [class="chrome"]         border none
-for_window [class="Firefox"]        border none
+# for_window [class="chrome"]         border none
+# for_window [class="Firefox"]        border none
 
 #############################################
 #            auto start with i3             #
 #############################################
 
 # composite manager
-exec --no-startup-id compton -b --config ~/.config/compton.conf
-# less eye pain
-exec --no-startup-id redshift -l 46:7
+exec --no-startup-id compton -b --config ~/.compton.conf
 # no beep!
 exec --no-startup-id xset b off
+# keyboard repeat
+exec --no-startup-id xset r rate 200 25
 # dunst for notifications and volnoti daemon
-exec --no-startup-id dunst -conf /home/aaron/.config/dunst/dunstrc
+exec --no-startup-id dunst -conf /home/peter/.dunstrc
 # wallpaper
-exec --no-startup-id feh --bg-fill /home/aaron/.config/wallpaper.jpg
+# exec --no-startup-id feh --randomize --bg-fill /home/peter/.wallpapers/*
