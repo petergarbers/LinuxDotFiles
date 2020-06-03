@@ -13,11 +13,11 @@
                        [im.chit/lucid.core.inject "1.3.6"]
                        [mvxcvi/puget "1.0.0"]
                        [molecule "0.1.1-SNAPSHOT"]
-                       [cider/piggieback "0.4.1"]
+                       ;;[cider/piggieback "0.4.1"]
                        [spec-provider "0.4.14"]
                        [org.clojure/tools.nrepl "0.2.12"]]
         :repl-options {:init (set! *print-length* 500)
-                       :nrepl-middleware [cider.piggieback/wrap-cljs-repl]
+                       ;;:nrepl-middleware [cider.piggieback/wrap-cljs-repl]
                        :timeout 120000}
         ;; injections used with lucid.core.inject to make certain code available in every ns
         :injections [(require '[lucid.core.inject :as inject]
