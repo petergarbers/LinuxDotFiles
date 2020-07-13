@@ -1,7 +1,6 @@
 export PATH=/usr/local/bin:$PATH
 source /usr/share/zsh/share/antigen.zsh
 
-
 eval "$(fasd --init auto)"
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
