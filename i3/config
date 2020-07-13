@@ -217,7 +217,7 @@ client.background        #ffffff
 bar {
     font $font
     position top
-    status_command /usr/bin/i3status ~/.i3/i3status.toml
+    status_command /usr/bin/i3status-rs ~/.i3/i3status.toml
     colors {
         separator #666666
         background #222439

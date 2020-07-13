@@ -49,8 +49,6 @@
 [[block]]
   block = "sound"
 
-[[block]]
-  block = "backlight"
 
 [[block]]
   block = "temperature"
