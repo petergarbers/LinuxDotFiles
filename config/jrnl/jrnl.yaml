@@ -1,0 +1,6 @@
+encrypt: true
+journals:
+default: /keybase/private/kvlt/journal.txt
+work:
+  journal: /keybase/private/kvlt/work.txt
+  encrypt: true
