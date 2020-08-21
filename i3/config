@@ -66,6 +66,9 @@ bindsym $mod+d                  exec rofi -show drun -theme glue_pro_blue -font 
 # lock i3 with i3lock
 bindsym $mod+Shift+x            exec i3lock -c 000000
 
+# hibernate (save system state to disk)
+bindsym $mod+Shift+z            exec systemctl hibernate
+
 #############################################
 #                  Keymaps                  #
 #############################################
