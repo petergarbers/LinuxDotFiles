@@ -258,5 +258,7 @@ exec --no-startup-id xset b off
 exec --no-startup-id xset r rate 200 25
 # dunst for notifications and volnoti daemon
 exec --no-startup-id dunst -conf /home/peter/.dunstrc
+# setup displays
+exec --no-startup-id ~/.screenlayout/default.sh
 # wallpaper
 # exec --no-startup-id feh --randomize --bg-fill /home/peter/.wallpapers/*
