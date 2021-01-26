@@ -1,6 +1,19 @@
+colors:
+  body: none
+  date: none
+  tags: none
+  title: none
+default_hour: 9
+default_minute: 0
+editor: ''
 encrypt: true
+highlight: true
+indent_character: '|'
 journals:
-default: /keybase/private/kvlt/journal.txt
-work:
-  journal: /keybase/private/kvlt/work.txt
-  encrypt: true
+  default: /keybase/private/kvlt/journal.txt
+  work: /keybase/private/kvlt/work-journal.txt
+linewrap: 79
+tagsymbols: '@'
+template: false
+timeformat: '%Y-%m-%d %H:%M'
+version: v2.4.5
