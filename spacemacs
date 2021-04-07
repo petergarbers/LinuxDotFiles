@@ -469,6 +469,13 @@ middle"
 
   (put-clojure-indent 'fn-traced 1)
 
+  (defun nrepl-reset ()
+    (interactive)
+    (set-buffer "*nrepl*")
+    (goto-char (point-max))
+    (insert "(user/reset)")
+    (nrepl-return))
+
   ;; Rust
 
 
