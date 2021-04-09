@@ -1,7 +1,8 @@
 # vim: ts=2 sw=2 et ft=toml
 
 [theme]
-  name = "slick"
+  name = "gruvbox-dark"
+  #name = "slick"
 
 [icons]
   name = "awesome"
@@ -56,6 +57,11 @@
   interval = 10
   format = "{average}°C"
   chip = "*-isa-*"
+
+[[block]]
+  block = "battery"
+  interval = 10
+  format = "{percentage}% {time}"
 
 [[block]]
   block = "time"
