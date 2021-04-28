@@ -1,5 +1,6 @@
 ;; see https://github.com/seancorfield/dot-clojure
-{:mvn/repos {"sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}}
+{}
+#_{:mvn/repos {"sonatype" {:url "https://oss.sonatype.org/content/repositories/snapshots/"}}
  :aliases
  {;; pull in specific versions of Clojure:
   :1.2 {:override-deps {org.clojure/clojure {:mvn/version "1.2.1"}}}

@@ -243,8 +243,8 @@ bar {
 # for_window [class="teamspeak3"]     floating enable
 
 # 0px Border
-# for_window [class="chrome"]         border none
-# for_window [class="Firefox"]        border none
+for_window [class="chrome"]         border none
+for_window [class="Firefox"]        border none
 
 #############################################
 #            auto start with i3             #
